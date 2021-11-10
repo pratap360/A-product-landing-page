@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <style>
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img 
+        id="header-img" 
+        src="https://cdn.freebiesupply.com/logos/large/2x/guitar-center-logo-png-transparent.png"
+        alt="Guitar center logo"
+        />
+      </div>
+
+        <nav id="nav-bar">
+          <ul>
+          <li><a class="nav-link" href="#learn-more">Learn More</a></li>
+          <li><a class="nav-link" href="#request-coupon">Request Coupon</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container"></div><br><br>
+
+    <section id="learn-more">
+      <center>
+        <h1>Handcrafted, home-made masterpieces</h1><br>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0l0cbazB1DI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </center>
+    </section>
+    <section id="request-coupon">
+      <center>
+        <h2>Request a Coupon</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" placeholder="you@whatever.com" name="email"></input>
+          <input id="submit" type="submit"></input>
+        </form>
+      </center>
+    </section>
+
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Acoustic Guitar</div>
+        <h2>₹6000</h2>
+        <ol>
+          <li>Finer quality wood gives</li>
+          <li>them an incomparable</li>
+          <li>sound and lasts longer.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Bass Guitar</div>
+        <h2>₹9000</h2>
+        <ol>
+          <li>A Bass Guitar is used to play basslines</li>
+          <li>that act as supporting notes for other instruments.</li>
+          <li>Bass Guitars are also the lowest</li>
+          <li>pitched members of the Guitar</li>
+        </ol>   
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Electro Guitar</div>
+        <h2>₹12000</h2>
+        <ol>
+          <li>An electric guitar is a guitar that requires external</li>
+          <li>amplification in order to be heard at typical</li>
+          <li>performance volumes, unlike.</li>
+          <li>a standard acoustic guitar.</li>
+        </ol>   
+        <button class="btn">Select</button>
+      </div>
+    </section>
+
+    <section id="product-img">
+      <div class="flex-container">
+        <div><a href="#">
+          <img src="https://source.unsplash.com/Q5IO7kum-J8/360x700" alt="Guitar-pic1">
+        </a></div>
+        <div><a href="#">
+          <img src="https://source.unsplash.com/0bBi5rjwS_s/360x700" alt="Guitar-pic2">
+        </a></div>
+        <div><a href="#">
+          <img src="https://source.unsplash.com/3bgcqIiFdRk/360x700" alt="Guitar-pic3">
+        </a></div>
+      </div>
+    </section>
+    
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2021, Original Guitar Center </span>
+    </footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>
